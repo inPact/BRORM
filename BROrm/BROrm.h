@@ -50,7 +50,7 @@
 - (NSArray*)findMany;
 - (NSArray*)findManyAsDictionaries;
 
-- (int)count;
+- (NSInteger)count;
 
 - (void)rawQuery:(NSString *)query withParameters:(NSArray*)parameters;
 - (void)select:(NSString*)column as:(NSString*)alias;
