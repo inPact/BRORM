@@ -1,0 +1,12 @@
+// Hand-written module map (TAB-49622). SwiftPM's generated layouts don't
+// fit: the case-insensitive match of BROrm.h against the target name
+// selects umbrella-header layout, but BROrm.h imports nothing, so the
+// module would only expose BROrm. This map reproduces the CocoaPods
+// module: all three public headers (BRSegmentedString stays out — pod
+// surface parity, see Package.swift).
+module BRORM {
+    header "BROrm.h"
+    header "BRModel.h"
+    header "NSString+Inflections.h"
+    export *
+}

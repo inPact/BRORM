@@ -20,3 +20,7 @@ DerivedData
 /BROrm.xcworkspace/xcuserdata
 /BROrm.xcodeproj/xcuserdata
 /BROrm.xcodeproj/project.xcworkspace/xcuserdata
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
